@@ -16,4 +16,4 @@ it('creates an async action to fetch the bitcoin value', () => {
     return store.dispatch(fetchBitcoin()).then(() => {
         expect(store.getActions()).toEqual(expectedActions);
     });
-})
+});
