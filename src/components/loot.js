@@ -12,11 +12,11 @@ export class Loot extends Component {
 
         if(Object.keys(bitcoin).length === 0) return '';
 
-        return this.props.balance / parseInt(balance,bpi.USD.rate.replace(','), 10);
+        return this.props.balance / parseInt(bitcoin.bpi.USD.rate.replace(',', ''), 10);
     }
     render() {
         return (
-            <h3>Bitcoin Balance {this.computeBitcoin()} </h3>
+            <h3>Bitcoin balance: {this.computeBitcoin()}</h3>
         )
     }
 }
